@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id='kk'>hello</p>
+        <input type='button' value='click this!' onclick='test()' />
+        <input type='button' value='dblclick this!' ondblclick='test2()' />
+        <input id='aa' type='text'/>
+        <img id='img' width=150 height="150" src='sample.png' style='display: none;'/>
+    </body>
+    <script>
+        function test(){
+            const tag = document.getElementById('kk'); // Document Object Model
+            const tag2 = document.getElementById('aa');
+            // tag.innerHTML += tag2.value;
+
+            // if (tag.innerHTML === 'hello'){
+            //     tag.innerHTML = 'aaa';
+            // } else{
+            //     tag.innerHTML ='hello'
+            // }
+
+            if (tag2.value =='123'){
+                alert("hi")
+            }
+        }
+        function test2(){
+            document.getElementById('img').style.display='none';
+        }
+        function test2(){
+            document.getElementById('img').style.display='block';
+        }
+    </script>
+</html>
